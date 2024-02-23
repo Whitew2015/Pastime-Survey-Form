@@ -10,8 +10,31 @@
     <h1 id="title">Pastime Survey Form</h1>
     <p id="description">Thank you for taking
         the time to fill out this survey</p>
-    <form id="survey-form">
-        
+    <form id="survey-form" method="POST">
+        <label for="name" id="name-label">Name <Input id="name"
+            type="text" name="name" placeholder="Enter your name" required></label>
+        <label for="email" id="email-label">Email <Input id="email"
+            type="email" name="email" placeholder="Enter your Email" required></label>
+        <label for="age" id="age-label">Age <Input id="number"
+            type="number" name="age" min="16" max="100" placeholder="Age" required></label>
+        <label for="occupation">What is your occupation?
+            <select id="dropdown" name="occupation">
+                <option value="" disabled selected>(select one)</option>
+                <option value="1">Student</option>
+                <option value="2">Part-Time</option>
+                <option value="3">Full-Time</option>
+                <option value="4">Unemployed</option>
+                <option value="5">Other</option>
+            </select>
+        </label>
+        <p id="gender">Are you a male or female?</p>
+        <label for="male-gender"><input id="male-gender" 
+        type="radio" name="sex" class="inline" checked>Male</label>
+        <label for="female-gender"><input id="female-gender" 
+        type="radio" name="sex" class="inline">Female</label>
+        <p class="pastime">What is your favorite pastime? 
+            <small>(Check all that apply):</small></p>
+        </form>
     </form>
 </body>
 </html>
