@@ -15,10 +15,10 @@
             type="text" name="name" placeholder="Enter your name" required></label>
         <label for="email" id="email-label">Email <Input id="email"
             type="email" name="email" placeholder="Enter your Email" required></label>
-        <label for="age" id="age-label">Age <Input id="number"
+        <label for="age" id="number-label">Age <Input id="number"
             type="number" name="age" min="16" max="100" placeholder="Age" required></label>
         <label for="occupation">What is your occupation?
-            <select id="dropdown" name="occupation">
+            <select id="dropdown" name="occupation" required>
                 <option value="" disabled selected>(select one)</option>
                 <option value="1">Student</option>
                 <option value="2">Part-Time</option>
@@ -29,12 +29,49 @@
         </label>
         <p id="gender">Are you a male or female?</p>
         <label for="male-gender"><input id="male-gender" 
-        type="radio" name="sex" class="inline" checked>Male</label>
+            type="radio" name="sex" class="inline" value="male-gender" 
+            checked>Male</label>
         <label for="female-gender"><input id="female-gender" 
-        type="radio" name="sex" class="inline">Female</label>
+            type="radio" name="sex" class="inline" 
+            value="female-gender">Female</label>
         <p class="pastime">What is your favorite pastime? 
             <small>(Check all that apply):</small></p>
-        </form>
+        <label for="gaming"><input id="gaming" type="checkbox"
+            name="gaming" class="inline" 
+            value="gaming">Playing Video Games</label>
+        <label for="working-out"><input id="working-out" type="checkbox"
+            name="working-out" class="inline" 
+            value="working-out">Working Out</label>
+        <label for="music"><input id="music" type="checkbox"
+            name="music" class="inline" 
+            value="music">Listening To Music</label>
+        <label for="anime"><input id="anime" type="checkbox"
+            name="anime" class="inline" 
+            value="anime">Watching Anime</label>
+        <label for="coding"><input id="coding" type="checkbox"
+            name="coding" class="inline" value="coding">Coding</label>
+        <label for="cooking-baking"><input id="cooking-baking" 
+            type="checkbox" name="cooking-baking" class="inline" 
+            value="cooking-baking">Cooking/Baking</label>
+        <label for="hiking"><input id="hiking" type="checkbox"
+            name="hiking" class="inline" value="hiking">Hiking</label>
+        <label for="reading"><input id="reading" type="checkbox"
+            name="reading" class="inline" 
+            value="reading">Reading</label>
+        <label for="photography"><input id="photography" type="checkbox"
+            name="photography" class="inline" 
+            value="photography">Photography</label>
+        <label for="traveling"><input id="traveling" type="checkbox"
+            name="traveling" class="inline" 
+            value="traveling">Traveling</label>
+        <label for="other"><input id="other" type="checkbox"
+            name="other" class="inline" 
+            value="other">Other</label>
+        <p id="comments">Are there any suggestions you want to add?</p>
+        <label for="suggestions"><textarea id="suggestions"
+            name="suggestions" rows="8" cols="55" 
+            placeholder="Enter comments here..."></textarea></label>
+        <input id="submit" type="submit" value="Submit">
     </form>
 </body>
 </html>
